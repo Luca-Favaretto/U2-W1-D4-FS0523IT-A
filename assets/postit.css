@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: #666666;
+  display: flex;
+  width: 80vw;
+
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  font-family: "Playpen Sans", cursive;
+  padding: 4rem;
+}
+
+.task {
+  position: relative;
+  width: 20%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 7px 7px 12px 0px;
+}
+.task:hover {
+  transform: scale(2, 2);
+}
+
+.task::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(to bottom, transparent 70%, #0000005e);
+}
+.task h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.task > p {
+}
+.task:nth-child(1),
+.task:nth-child(5),
+.task:nth-child(7) {
+  background-color: #f2f3bf;
+  transform: rotate(354deg);
+}
+.task:nth-child(2),
+.task:nth-child(4),
+.task:nth-child(8) {
+  background-color: #c2edc3;
+  transform: rotate(365deg);
+}
+.task:nth-child(3),
+.task:nth-child(6) {
+  background-color: #c6c6f1;
+  transform: rotate(354deg);
+}
