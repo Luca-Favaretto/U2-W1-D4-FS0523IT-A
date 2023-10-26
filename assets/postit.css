@@ -36,7 +36,7 @@ body {
   transform: translateY(-1000px);
 
   box-shadow: rgba(0, 0, 0, 0.4) 7px 7px 5px 0px;
-  animation: fixWords 1.5s forwards;
+
   transition: transform 1s;
 }
 
@@ -55,18 +55,20 @@ body {
 .task:nth-child(5),
 .task:nth-child(7) {
   background-color: #f2f3bf;
-
+  animation: fixWords 1s forwards;
   transform: rotate(-6deg);
 }
 .task:nth-child(2),
 .task:nth-child(4),
 .task:nth-child(8) {
   background-color: #c2edc3;
+  animation: fixWords 1.7s forwards;
   transform: rotate(5deg);
 }
 .task:nth-child(3),
 .task:nth-child(6) {
   background-color: #c6c6f1;
+  animation: fixWords 0.5s forwards;
   transform: rotate(-6deg);
 }
 .task:hover {
