@@ -6,7 +6,7 @@
 body {
   background-color: #666666;
   display: flex;
-  width: 80vw;
+  width: 100vw;
 
   flex-wrap: wrap;
   justify-content: center;
@@ -18,16 +18,15 @@ body {
 .task {
   position: relative;
   width: 20%;
-  height: 150px;
+  height: 120px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.4) 7px 7px 12px 0px;
-}
-.task:hover {
-  transform: scale(2, 2);
+
+  box-shadow: rgba(0, 0, 0, 0.4) 7px 7px 5px 0px;
+  transition: all 1s;
 }
 
 .task::after {
@@ -41,22 +40,24 @@ body {
   font-weight: 600;
 }
 
-.task > p {
-}
 .task:nth-child(1),
 .task:nth-child(5),
 .task:nth-child(7) {
   background-color: #f2f3bf;
-  transform: rotate(354deg);
+
+  transform: rotate(-6deg);
 }
 .task:nth-child(2),
 .task:nth-child(4),
 .task:nth-child(8) {
   background-color: #c2edc3;
-  transform: rotate(365deg);
+  transform: rotate(5deg);
 }
 .task:nth-child(3),
 .task:nth-child(6) {
   background-color: #c6c6f1;
-  transform: rotate(354deg);
+  transform: rotate(-6deg);
+}
+.task:hover {
+  transform: scale(1.3, 1.3);
 }
