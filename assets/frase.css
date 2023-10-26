@@ -55,6 +55,8 @@ body {
 }
 
 .parole i {
+  height: 50px;
+  width: 200px;
   color: #6a889c;
   position: absolute;
   left: 4px;
