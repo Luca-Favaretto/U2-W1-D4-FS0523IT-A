@@ -50,6 +50,18 @@ body {
   }
 }
 
+@keyframes fixWords {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .parole {
   position: relative;
 }
@@ -71,6 +83,6 @@ body {
   animation: rotateWords 3s 3s;
 }
 .parole i:nth-child(3) {
-  animation: rotateWords 3s 6s;
+  animation: fixWords 1.5s 6s;
   opacity: 0;
 }
