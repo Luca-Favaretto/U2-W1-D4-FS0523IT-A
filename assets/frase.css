@@ -40,6 +40,10 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
   to {
     opacity: 0;
     transform: translateY(100px);
@@ -53,18 +57,18 @@ body {
 .parole i {
   color: #6a889c;
   position: absolute;
-
-  width: 60px;
+  left: 4px;
 }
 
 .parole i:nth-child(1) {
-  animation: faiden 1s 1s;
+  opacity: 0;
+  animation: faiden 3s;
 }
 .parole i:nth-child(2) {
   opacity: 0;
-  animation: rotateWords 2s 3s;
+  animation: rotateWords 3s 3s;
 }
 .parole i:nth-child(3) {
-  animation: rotateWords 2s 5s;
+  animation: rotateWords 3s 6s;
   opacity: 0;
 }
