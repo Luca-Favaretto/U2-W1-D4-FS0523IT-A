@@ -83,6 +83,6 @@ body {
   animation: rotateWords 3s 3s;
 }
 .parole i:nth-child(3) {
-  animation: fixWords 1.5s 6s;
+  animation: fixWords 1.5s 6s forwards;
   opacity: 0;
 }
